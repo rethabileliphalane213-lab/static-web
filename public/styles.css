@@ -1,13 +1,86 @@
+:root{
+    --main-color:#00ddff;
+}
+
 .home-page{
     font-family: Arial, sans-serif;
     background-image: url("profile1.png");
-    background-size: 100% auto;
-    background-position: top center;
+     background-size: cover;
+    background-position: center -330px;
     background-repeat: no-repeat;
+    min-height: 110vh;
 
     margin: 0;
     padding: 0;
     font-size: 16px;
 
-    min-height: 200vh; 
+    
+}
+.nav-bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    background: transparent;
+    padding: 15px 8%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    z-index: 1000;
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-bar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    transition: .3s;
+}
+
+.nav-bar ul li a:hover,
+.nav-bar ul li a.active{
+    color: #0f93ff;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-content{
+    max-width: 650px;
+    margin-top: 80px; /* Prevents navbar overlap */
+}
+
+.home-content h3{
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.home-content h1{
+    font-size: 4.5rem;
+    color: white;
+    margin: 0;
+    line-height: 1.2;
+}
+
+.home-content p{
+    font-size: 1.2rem;
+    color: white;
+    line-height: 1.8;
+    margin-top: 20px;
+}
+
+.home-content span{
+    color: var(--main-color);
 }
