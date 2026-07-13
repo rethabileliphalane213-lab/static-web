@@ -84,3 +84,15 @@
 .home-content span{
     color: var(--main-color);
 }
+
+.home-content h4{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #d8d8d8;
+    line-height: 1.8;
+    margin-top: 30px;
+    max-width: 550px;
+    border-left: 4px solid var(--main-color);
+    padding-left: 18px;
+    font-style: italic;
+}
