@@ -58,7 +58,7 @@
 
 .home-content{
     max-width: 650px;
-    margin-top: 80px; /* Prevents navbar overlap */
+    margin-top: 80px;
 }
 
 .home-content h3{
@@ -95,4 +95,159 @@
     border-left: 4px solid var(--main-color);
     padding-left: 18px;
     font-style: italic;
+}
+
+
+/* ==========================
+   ABOUT SECTION
+========================== */
+
+.about{
+    max-width: 1200px;
+    margin: auto;
+    padding: 8rem 8%;
+}
+
+.about h1{
+    text-align: center;
+    font-size: 4.5rem;
+    margin-bottom: 1rem;
+}
+
+.about h1 span{
+    color: var(--main-color);
+}
+
+.about-subtitle{
+    text-align: center;
+    font-size: 1.8rem;
+    color: #bcbcbc;
+    margin-bottom: 5rem;
+}
+
+
+/* ==========================
+   SERVICE BOX
+========================== */
+
+.service-box{
+    background: rgba(255,255,255,.04);
+    backdrop-filter: blur(10px);
+
+    border: 1px solid rgba(255,255,255,.08);
+    border-left: 5px solid var(--main-color);
+
+    border-radius: 20px;
+
+    padding: 3rem;
+    margin-bottom: 4rem;
+
+    transition: .35s ease;
+}
+
+.service-box:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 30px rgba(0,255,255,.2);
+}
+
+
+/* ==========================
+   ICON
+========================== */
+
+.service-box i{
+    font-size: 4rem;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+
+/* ==========================
+   TITLES
+========================== */
+
+.service-box h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;
+}
+
+.background h2,
+.services h2{
+
+    display: inline-block;
+
+    font-size: 2rem;
+
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+
+    padding-bottom: .5rem;
+
+    border-bottom: 3px solid var(--main-color);
+}
+
+
+/* ==========================
+   PARAGRAPHS
+========================== */
+
+.service-box p{
+    font-size: 1.7rem;
+    line-height: 1.9;
+    color: #d0d0d0;
+    margin-bottom: 2rem;
+}
+
+
+/* ==========================
+   LINKS
+========================== */
+
+.service-box a{
+    color: var(--main-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s ease;
+}
+
+.service-box a:hover{
+    letter-spacing: 1px;
+}
+
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.service-box .btn{
+    margin-top: 2rem;
+}
+
+
+/* ==========================
+   MOBILE
+========================== */
+
+@media(max-width:768px){
+
+    .about{
+        padding: 5rem 5%;
+    }
+
+    .about h1{
+        font-size: 3.5rem;
+    }
+
+    .service-box{
+        padding: 2rem;
+    }
+
+    .service-box h3{
+        font-size: 2.5rem;
+    }
+
+    .service-box p{
+        font-size: 1.6rem;
+    }
+
 }
