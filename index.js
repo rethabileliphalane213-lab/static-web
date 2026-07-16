@@ -1,17 +1,19 @@
-const mode=document.getElementById('mode')
-const body = document.body
-let on=false
-function lightOrDark(){
-    on=!on
-    if(on){
-       body.style.backgroundColor="black" 
-       body.style.color="white"
-}else{
-     body.style.backgroundColor="white" 
-       body.style.color="black"
-}
-}
+const buttons = document.querySelectorAll(".read-more-btn");
 
-mode.addEventListener("click",()=>{
-    lightOrDark()
-})
+buttons.forEach((btn) => {
+
+    btn.addEventListener("click", () => {
+
+        const card = btn.closest(".service-box");
+
+        card.classList.toggle("active");
+
+        if(card.classList.contains("active")){
+            btn.textContent = "Read Less";
+        }else{
+            btn.textContent = "Read More";
+        }
+
+    });
+
+});
